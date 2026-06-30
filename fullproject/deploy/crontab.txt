@@ -1,0 +1,4 @@
+# Add this line via `crontab -e` on the server (as the www-data user, or with
+# `crontab -u www-data -e` if running as root):
+
+* * * * * cd /var/www/crm-platform && php artisan schedule:run >> /dev/null 2>&1
